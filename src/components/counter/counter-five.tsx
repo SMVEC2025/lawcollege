@@ -19,6 +19,8 @@ const counterData = [
   },
 ];
 
+
+
 export default function CounterFive() {
   return (
     <section className="tp-campus-counter-area grey-bg pb-120">

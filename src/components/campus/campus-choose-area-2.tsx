@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import campus_thumb_1 from "@/assets/img/campus/campus/campus-thumb-1.png";
 import campus_thumb_2 from "@/assets/img/campus/campus/campus-thumb-2.png";

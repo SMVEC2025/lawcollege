@@ -3,7 +3,6 @@ import { RightArrow, ShapeLine } from '../svg';
 
 // images
 import thumb_1 from '@/assets/img/hero/hero-bg-1.webp';
-import thumb_2 from '@/assets/img/about/about-thumb-2.jpg';
 import shape_1 from '@/assets/img/about/about-shape-1.jpg';
 import shape_2 from '@/assets/img/about/about-shape-2.jpg';
 import icon_1 from '@/assets/img/icon/about/about-icon-1.svg';

@@ -1,10 +1,6 @@
 "use client"
 import React, { useContext } from "react";
-
-import EventAreaFour from "@/components/event/event-area-four";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
-import EventArea from "@/components/event/event-area";
-import EventAreaThree from "@/components/event/event-area-three";
 import EventAreaTwo from "@/components/event/event-area-two";
 import { GlobalContext } from "@/context/global-context";
 

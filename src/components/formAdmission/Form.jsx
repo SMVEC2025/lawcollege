@@ -161,7 +161,7 @@ const Form = () => {
 
       };
       try {
-        const response = await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
+       await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
 
         setTimeout(() => {
           setIsSubmitted(true)

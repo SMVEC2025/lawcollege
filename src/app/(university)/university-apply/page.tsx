@@ -4,7 +4,6 @@ import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import CampusChooseArea from "@/components/campus/campus-choose-area";
 import apply_thumb from "@/assets/img/images/maincollege.jpg";
 import ProcessTwo from "@/components/process/process-two";
-import ApplyRequirement from "@/components/requirement/apply-requirement-area";
 
 export const metadata: Metadata = {
   title: "University Apply - Acadia",

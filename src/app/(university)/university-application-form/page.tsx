@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import ApplicationForm from "@/components/form/application-form";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import Form from '../../../components/formAdmission/Form'
 export const metadata: Metadata = {

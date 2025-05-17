@@ -1,19 +1,8 @@
 import Image from "next/image";
 import { VideoPlayerSvg } from "../svg";
 import VideoProvider from "../video/video-provider";
-import ab_img_1 from "@/assets/img/images/images1.jpg";
-import ab_img_2 from "@/assets/img/images/images2.jpg";
-import ab_img_3 from "@/assets/img/images/images3.jpg";
-import ab_img_4 from "@/assets/img/images/images4.jpg";
 import mainimg from  "@/assets/img/images/studentscort.png"
-import Link from "next/link";
 
-const thumbs = [
-    {id:1,col_lg:3,img:ab_img_1,delay:.5},
-    {id:2,col_lg:4,img:ab_img_2,delay:.7},
-    {id:3,col_lg:3,img:ab_img_3,delay:.9},
-    {id:4,col_lg:2,img:ab_img_4,delay:1},
-]
 
 type IProps = {
    spacing?:string;

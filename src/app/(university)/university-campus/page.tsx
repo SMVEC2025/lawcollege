@@ -1,9 +1,7 @@
 import { Metadata } from "next";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import CampusChooseAreaTwo from "@/components/campus/campus-choose-area-2";
-import CounterFive from "@/components/counter/counter-five";
 import CampusStudentArea from "@/components/campus/campus-student-area";
-import CampusActivityArea from "@/components/campus/campus-activity-area";
 import CampusVideoArea from "@/components/campus/campus-video-area";
 import CampusLifeArea from "@/components/campus/campus-life-area";
 import Facilities from "./component/Facilities";

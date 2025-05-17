@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import CampusChooseArea from "@/components/campus/campus-choose-area";
-import CounterThree from "@/components/counter/counter-three";
 import AdmissionArea, {
   AdmissionApplyArea,
   AdmissionCtaArea,

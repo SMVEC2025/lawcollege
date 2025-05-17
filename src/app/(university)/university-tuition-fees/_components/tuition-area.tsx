@@ -1,5 +1,4 @@
 import {
-  ArtDesignSvg,
   BusinessSvg,
   ComputerScienceSvg,
   EconomicsSvg,
