@@ -136,7 +136,10 @@ export const menu_data_2: IMenuDT2[] = [
 		dropdown_menus: [
 			{ id: 1, title: "Admission", link: "/university-admission-overview" },
 			{ id: 2, title: "How to Apply", link: "/university-apply" },
-			{ id: 3, title: "Tuition & Fees", link: "/university-tuition-fees" },]
+			{ id: 3, title: "Tuition & Fees", link: "/university-tuition-fees" },
+			{ id: 3, title: "Enquire Now", link: "/university-application-form" },
+		
+		]
 
 	},
 	{

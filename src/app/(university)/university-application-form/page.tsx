@@ -9,7 +9,7 @@ export default function UniversityApplicationFormPage() {
   return (
     <main>
       <BreadcrumbTwo title="Enquiry Form" subtitle='enquiry Form'/>
-       <div className="af_main" style={{backgroundColor:"#f5f4ef"}}>
+       <div className="af_main" style={{backgroundColor:"#eeeff3"}}>
         <Form/>
        </div>
     </main>
