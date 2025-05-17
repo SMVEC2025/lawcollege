@@ -34,7 +34,7 @@ const tabContentData = [
   },
   {
     id: "profile",
-    imgSrc: "/assets/img/campus/marque5.png",
+    imgSrc: "/assets/img/campus/campus/marque5.png",
     title: "Sports",
     description:
       "Student Housing provides a home for eligible undergraduate and graduate students, including couples and families.",
@@ -42,7 +42,7 @@ const tabContentData = [
   },
   {
     id: "contact",
-    imgSrc: "/assets/img/campus/marque2.png",
+    imgSrc: "/assets/img/campus/campus/marque2.png",
     title: "Arts & Culture",
     description:
       "Student Housing provides a home for eligible undergraduate and graduate students, including couples and families.",
