@@ -7,10 +7,6 @@ interface EventAcf {
   description:string;
 }
 
-interface Event {
-  id: string | number;
-  acf: EventAcf;
-}
 
 export type IEventDT = {
   id: number;
