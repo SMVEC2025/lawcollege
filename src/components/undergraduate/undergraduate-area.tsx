@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MajorPrograms, MinorsPrograms, RightArrowSeven } from "../svg";
+import { MajorPrograms} from "../svg";
 import { university_classic_program_data } from "@/data/program-data";
 import { FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";

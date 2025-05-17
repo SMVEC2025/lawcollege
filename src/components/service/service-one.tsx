@@ -6,7 +6,6 @@ import { RightArrowTwo, RightSmArrowTwo } from "../svg";
 import ser_icon_1 from "@/assets/img/icon/service/service-icon-1.svg";
 import ser_icon_2 from "@/assets/img/icon/service/service-icon-2.svg";
 import ser_icon_3 from "@/assets/img/icon/service/service-icon-3.svg";
-import ser_icon_4 from "@/assets/img/icon/service/service-icon-4.svg";
 import ser_shape from '@/assets/img/shape/service/services-shape-1.png';
 import Form from "../formAdmission/Form";
 

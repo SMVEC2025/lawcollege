@@ -22,7 +22,7 @@ export default function EventAreaTwo({events}:any) {
               >
                 <div className="tp-event-3-thumb">
                   <Link href={`/event-details/${item?.acf?.title}`}>
-                    <Image
+                    <img
                      
                       src={item?.acf?.image}
                       alt={item?.acf?.title}

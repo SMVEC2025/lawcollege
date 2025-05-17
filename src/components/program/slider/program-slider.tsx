@@ -4,7 +4,6 @@ import { SwiperOptions } from "swiper/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { university_classic_program_data } from "@/data/program-data";
-import tag_svg from '@/assets/img/icon/program-tag-1.svg';
 import Link from "next/link";
 
 const slider_options: SwiperOptions = {

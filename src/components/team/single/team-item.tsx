@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { UpArrowTwo } from "@/components/svg";
 import { ITeamDT } from "@/types/team-d-t";
 
 type IProps = {

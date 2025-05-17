@@ -1,5 +1,6 @@
 import SocialLinks from '@/components/social/social-links';
 import { CalenderTwoSvg, ClockSvgThree,LocationThree, MinusSvg, Ongoing, PlusTwoSvg } from '@/components/svg';
+import { IEventDT } from '@/types/event-d-t';
 
 export default function EventBox({event}:any) {
   return (
