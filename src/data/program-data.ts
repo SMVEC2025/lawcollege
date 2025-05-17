@@ -61,7 +61,7 @@ export const university_classic_program_data: IProgramDT[] = [
   },
   {
     id: 4,
-    img: "/assets/img/images/course-4.png",
+    img: "/assets/img/images/course-4.jpg",
     title: "LL.B Degree",
     description:
       "The Economics Major can be combined with a Major in another subject in order Double Major Degree.",
