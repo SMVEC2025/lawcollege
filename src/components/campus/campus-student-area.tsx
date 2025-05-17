@@ -46,7 +46,7 @@ const tabContentData = [
     title: "Arts & Culture",
     description:
       "Student Housing provides a home for eligible undergraduate and graduate students, including couples and families.",
-    thumbImgSrc: "/assets/img/campus/campus/campus-studentarts.jpg",
+    thumbImgSrc: "/assets/img/campus/campus/campus-studentarts.png",
   },
   {
     id: "Moscow",
