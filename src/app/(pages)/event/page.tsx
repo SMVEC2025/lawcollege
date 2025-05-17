@@ -16,7 +16,6 @@ export default function EventPage() {
   if (!context) return null;
 
   const {
-    setFormOpen,
     events
   } = context;
 

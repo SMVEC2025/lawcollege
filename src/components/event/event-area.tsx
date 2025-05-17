@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { RightArrow, RightArrowThree } from "../svg";
 import shape_line from "@/assets/img/unlerline/event-1-svg-1.svg";
-import {university_classic_event_data} from "@/data/event-data";
 import HoverImgItem from "./hover-img-item";
 import { GlobalContext } from "@/context/global-context";
 import { useContext } from "react";
@@ -16,7 +15,6 @@ export default function EventArea() {
   if (!context) return null;
 
   const {
-    setFormOpen,
     events
   } = context;
 

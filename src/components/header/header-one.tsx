@@ -2,12 +2,9 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { SearchSvg } from "../svg";
-import NavMenus from "./navbar/nav-menus";
 import logo from "@/assets/img/logo/logo.svg";
 import logo_black from "@/assets/img/logo/logo-black.svg";
 import HeaderStickyWrapper from "./header-sticky-provider/header-sticky-wrapper";
-import SearchButton from "./button/search-button";
 import OffcanvasButton from "./button/offcanvas-btn";
 import NavbarMenusTwo from "./navbar/navbar-menus-2";
 import { GlobalContext } from '@/context/global-context';
@@ -20,7 +17,6 @@ export default function HeaderOne() {
 
   const {
     setFormOpen,
-    events
   } = context;
 
   const handleFormOpen = ()=>{
