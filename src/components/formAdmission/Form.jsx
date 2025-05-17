@@ -50,8 +50,10 @@ const indianStates = [
 // Add more states as needed
 
 const courses = [
-  'BSc Agriculture',
-  'BSc Horticulture'
+  'B.A., LL.B - 5 years',
+  'B.B.A. LL.B - 5 years',
+  'B.Sc. LL.B - 5 years',
+  'LL.B - 3 years'
 ];
 
 const Form = () => {
@@ -128,6 +130,8 @@ const Form = () => {
 
 
     if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.email.trim()) newErrors.email = 'email is required';
+    if (!formData.course) newErrors.course = 'Select a course';
     if (!formData.fathername.trim()) newErrors.fathername = 'fatername is required';
     if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
     else if (!/^\d{10}$/.test(formData.phone)) newErrors.phone = 'Invalid phone number';
@@ -147,7 +151,7 @@ const Form = () => {
 
         student_name: formData.name,
         father_name: formData.fathername,
-        department: 'BSc Agriculture',
+        department: formData.course,
         mobile: formData.phone,
         email: formData.email,
         state: `${formData.city},${formData.state}`,
@@ -342,7 +346,26 @@ const Form = () => {
           />
         </div>
 
-
+        <div className={`form-group ${errors.course && 'error'}`}>
+          <label htmlFor="course">Program:</label>
+          <select
+            id="course"
+            name="course"
+            value={formData.course}
+            onChange={handleChange}
+            className={errors.course ? 'error' : ''}
+          >
+            <option value="">Select Program</option>
+            {/* Pondicherry first */}
+            {/* Other states */}
+            {courses
+              .map(course => (
+                <option key={course} value={course}>
+                  {course}
+                </option>
+              ))}
+          </select>
+        </div>
 
         <div className={`form-group ${errors.state && 'error'}`}>
           <label htmlFor="state">State:</label>
