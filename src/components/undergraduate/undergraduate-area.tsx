@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MajorPrograms, MinorsPrograms, RightArrowSeven } from "../svg";
 import { university_classic_program_data } from "@/data/program-data";
 import { FaChevronRight } from "react-icons/fa6";
+import Image from "next/image";
 
 
 export default function UndergraduateArea() {
@@ -57,7 +58,7 @@ export default function UndergraduateArea() {
                       <Link href={`/program-details/${p.id}`}>
                         <div className="tp-undergraduate-program-list">
                           <div className="divone">
-                            <img src={p.img} alt="" />
+                            <Image src={p.img} alt="" />
                           </div>
                           <div className="divtwo">
                             <h4>{p.title}</h4>

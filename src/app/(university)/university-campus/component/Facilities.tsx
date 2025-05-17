@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 function Facilities() {
   const facility = [
@@ -48,7 +49,7 @@ function Facilities() {
           <div className="grid-container">
            {facility.map((e,i)=>(
             <div key={i} className="grid-div">
-            <img src={e.img} alt="" />
+            <Image src={e.img} alt="" />
             <div className="content">
                <h3>{e.name}</h3>
                <p>{e.para}.</p>

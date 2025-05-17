@@ -1,10 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { event_speakers_data } from "@/data/team-data";
 import EventBox from "./event-box";
-import { PlusThreeSvg } from "@/components/svg";
-import EventDetailsVideo from "./event-details-video";
-import details_overlay_img from "@/assets/img/event/event/event-details-overlay.png";
 import { IEventDT } from "@/types/event-d-t";
 
 type IProps = {
@@ -26,7 +22,7 @@ export default function EventDetailsArea({event}:IProps) {
               </div>
               
               <div className="tp-event-details-teaser">
-                <img className="event-image" src={event.acf.image} alt="" />
+                <Image className="event-image" src={event.acf.image} alt="" />
               </div>
             </div>
           </div>
