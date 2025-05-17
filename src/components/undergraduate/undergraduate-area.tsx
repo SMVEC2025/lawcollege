@@ -58,7 +58,9 @@ export default function UndergraduateArea() {
                       <Link href={`/program-details/${p.id}`}>
                         <div className="tp-undergraduate-program-list">
                           <div className="divone">
-                            <Image src={p.img} alt="" />
+                            <Image src={p.img} alt=""    width={350}
+                height={198}
+                style={{height:'auto'}}/>
                           </div>
                           <div className="divtwo">
                             <h4>{p.title}</h4>
