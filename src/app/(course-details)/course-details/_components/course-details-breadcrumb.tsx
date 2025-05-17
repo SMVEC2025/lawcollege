@@ -3,7 +3,6 @@ import Image from "next/image";
 import { HomeSvg } from "@/components/svg";
 import { ICourseDT } from "@/types/course-d-t";
 import { removeTagInText } from "@/utils";
-import author_img from "@/assets/img/course/course-5-teacher-1.png";
 
 type IProps = {
    course: ICourseDT
@@ -28,7 +27,6 @@ export default function CourseDetailsBreadcrumb({ course }: IProps) {
                            <div className="tp-course-details-2-meta ">
                               <div className="tp-course-details-2-author d-flex align-items-center">
                                  <div className="tp-course-details-2-author-avater">
-                                    <Image src={course.author_img ? course.author_img : author_img} alt="Salim Rana" width={50} height={50} />
                                  </div>
                                  <div className="tp-course-details-2-author-content">
                                     <span className="tp-course-details-2-author-designation">Teacher</span>
