@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { kids_event_data } from "@/data/event-data";
 import location_svg from "@/assets/img/icon/location.svg";
 import Link from "next/link";
 
