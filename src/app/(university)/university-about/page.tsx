@@ -3,9 +3,6 @@ import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import AboutTwo from "@/components/about/about-two";
 import CounterFour from "@/components/counter/counter-four";
 import MissionArea from "@/components/mission/mission-area";
-import AboutThree from "@/components/about/about-three";
-import AboutCampus from "@/components/about/about-campus";
-import TeamAreaThree from "@/components/team/team-area-three";
 import Dean from "./Dean";
 import BoardMembers from "./BoardMembers";
 

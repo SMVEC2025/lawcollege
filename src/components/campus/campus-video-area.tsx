@@ -1,5 +1,3 @@
-import { PlaySvg } from "../svg";
-import VideoProvider from "../video/video-provider";
 
 export default function CampusVideoArea() {
   return (

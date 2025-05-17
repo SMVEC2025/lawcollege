@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import EventBox from "./event-box";
 import { IEventDT } from "@/types/event-d-t";

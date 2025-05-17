@@ -7,8 +7,7 @@ import CounterOne from '@/components/counter/counter-one';
 import ProgramArea from '@/components/program/program-area';
 import EventArea from '@/components/event/event-area';
 import TestimonialOne from '@/components/testimonial/testimonial-one';
-import InstagramArea from '@/components/instagram/instagram-area';
-import CtaOne from '@/components/cta/cta-one';
+
 
 
 export const metadata: Metadata = {

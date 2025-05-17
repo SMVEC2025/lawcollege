@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { HomeSvg } from "@/components/svg";
 import { ICourseDT } from "@/types/course-d-t";
 import { removeTagInText } from "@/utils";

@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { HomeSvg } from "@/components/svg";
-import Timer from "@/components/timer";
-import { IEventDT } from "@/types/event-d-t";
 import { IProgramDT } from "@/types/program-d-t";
 
 type IProps = {

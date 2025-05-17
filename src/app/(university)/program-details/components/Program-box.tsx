@@ -1,5 +1,5 @@
 import SocialLinks from '@/components/social/social-links';
-import { CalenderTwoSvg, ClockSvgThree,LocationThree, MinusSvg, Ongoing, PlusTwoSvg } from '@/components/svg';
+import { CalenderTwoSvg, ClockSvgThree} from '@/components/svg';
 import { IProgramDT } from '@/types/program-d-t';
 
 type IProps = {
