@@ -59,7 +59,7 @@ export default function UndergraduateArea() {
                         <div className="tp-undergraduate-program-list">
                           <div className="divone">
                             <Image src={p.img} alt=""    width={350}
-                height={198}
+                height={2}
                 style={{height:'auto'}}/>
                           </div>
                           <div className="divtwo">
