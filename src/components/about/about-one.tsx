@@ -71,7 +71,7 @@ export default function AboutOne() {
                         <h3 className="tp-section-title mb-30">Upholding Justice,<br/>  Shaping 
                             <span> Tomorrow <ShapeLine/> </span>
                         </h3>
-                        <p>SMVEC's College of Law is dedicated to empowering the next generation of legal minds through quality education, research, and advocacy. We nurture future leaders in law with strong ethical values, practical skills, and a deep understanding of justice and societal impact.</p>
+                        <p>SMVEC&apos;s College of Law is dedicated to empowering the next generation of legal minds through quality education, research, and advocacy. We nurture future leaders in law with strong ethical values, practical skills, and a deep understanding of justice and societal impact.</p>
                     </div>
                     <div className="tp-about-list">
                         {about_lists.map((list) => (

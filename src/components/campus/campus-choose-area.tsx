@@ -23,7 +23,7 @@ export default function CampusChooseArea() {
                   data-wow-delay=".5s"
                 >
                   <h2 className="tp-campus-choose-title fs-50">
-                    Shape your future in law with a rigorous academic environment, distinguished faculty, and real-world legal exposure at SMVEC college of law. We are now accepting applications for the academic year 2025. Whether you're aspiring to become a legal practitioner, judge, or policy expert, our programs are designed to empower you with the knowledge, skills, and ethics needed for a successful legal career.
+                    Shape your future in law with a rigorous academic environment, distinguished faculty, and real-world legal exposure at SMVEC college of law. We are now accepting applications for the academic year 2025. Whether you&apos;re aspiring to become a legal practitioner, judge, or policy expert, our programs are designed to empower you with the knowledge, skills, and ethics needed for a successful legal career.
                   </h2>
                 </div>
               </div>

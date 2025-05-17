@@ -1,6 +1,7 @@
 "use client";
 import { GlobalContext } from "@/context/global-context";
 import { IAnnouncementDT } from "@/types/announcement-d-t";
+import { IEventDT } from "@/types/event-d-t";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
@@ -13,7 +14,7 @@ export default function GlobalContextProvider({ children }: IPropType) {
   const [showAnnounceAddEditModal, setShowAnnounceAddEditModal] = useState(false);
   const [announceEditMode, setAnnounceEditMode] = useState<IAnnouncementDT | null>(null);
   const [formOpen, setFormOpen] = useState(false);
-  const [events, setEvents] = useState<any[]>([]); // Replace `any` with a specific type if available
+  const [events, setEvents] = useState<IEventDT[]>([]); 
   const [loader, setLoader] = useState(false);
  useEffect(() => {
      // Replace with your endpoint; consider adding `id` in _fields for React keys

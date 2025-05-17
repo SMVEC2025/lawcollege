@@ -1,3 +1,17 @@
+
+interface EventAcf {
+  title: string;
+  image: string;
+  date: string;
+  location: string;
+  description:string;
+}
+
+interface Event {
+  id: string | number;
+  acf: EventAcf;
+}
+
 export type IEventDT = {
   id: number;
   date: {
@@ -9,5 +23,5 @@ export type IEventDT = {
   time: string;
   location: string;
   image: string;
-  acf:any;
+  acf:EventAcf;
 };

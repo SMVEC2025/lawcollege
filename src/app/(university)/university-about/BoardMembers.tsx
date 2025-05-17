@@ -17,7 +17,7 @@ function BoardMembers() {
         <h2 className="header" data-wow-delay=".3s">
           Board of Trustees and Management
         </h2>
-        <p className="courses-sub-text mt-3 wow fadeInUp" data-wow-delay=".5s">  Guided by visionary leadership, our Board of Trustees and Management ensure the college's commitment to excellence and integrity.
+        <p className="courses-sub-text mt-3 wow fadeInUp" data-wow-delay=".5s">  Guided by visionary leadership, our Board of Trustees and Management ensure the college&apos;s commitment to excellence and integrity.
         </p>
       </div>
 
