@@ -20,7 +20,7 @@ export default function OffcanvasMenuTwo() {
   
    return (
       <>
-         <div className="tp-main-menu-mobile d-xl-none">
+         <div id={`${subMenu}`} className="tp-main-menu-mobile d-xl-none">
             <nav className="tp-main-menu-content">
                <ul className="dropdown-opened">
                   {menu_data_2.map((menu) => (
