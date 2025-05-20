@@ -2,16 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from '@/assets/img/logo/logo-black.png';
 import { BehanceSvg, CloseThreeSvg, DribbleSvg, InstagramSvg, YoutubeTwoSvg } from "@/components/svg";
-import OffcanvasMenu from "./offcanvas-menu";
 import OffcanvasMenuTwo from "./offcanvas-menu-2";
 
-
-const galleryData = [
-   { link: "https://www.instagram.com/", src: "/assets/img/menu/offcanvas/offcanvas-1.jpg" },
-   { link: "https://www.instagram.com/", src: "/assets/img/menu/offcanvas/offcanvas-2.jpg" },
-   { link: "https://www.instagram.com/", src: "/assets/img/menu/offcanvas/offcanvas-3.jpg" },
-   { link: "https://www.instagram.com/", src: "/assets/img/menu/offcanvas/offcanvas-4.jpg" },
-];
 
 type IProps = {
    openOffCanvas: boolean;
@@ -19,7 +11,7 @@ type IProps = {
    offcanvas_cls?: string;
    offcanvas_menu_2?: boolean;
 }
-export default function OffcanvasArea({openOffCanvas,onHandleOffCanvas,offcanvas_cls,offcanvas_menu_2}:IProps) {
+export default function OffcanvasArea({openOffCanvas,onHandleOffCanvas,offcanvas_cls}:IProps) {
    return (
       <>
          <div className={`offcanvas__area ${offcanvas_cls} ${openOffCanvas ? 'offcanvas-opened' : ''}`}>

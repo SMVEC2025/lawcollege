@@ -17,14 +17,7 @@ export default function OffcanvasMenuTwo() {
       }
       setSubMenu("");
    };
-   // openSubMobileMenu
-   const openSubMobileMenu = (s_menu: string) => {
-      if (subMenu === s_menu) {
-         setSubMenu("");
-      } else { 
-         setSubMenu(s_menu);
-      }
-   };
+  
    return (
       <>
          <div className="tp-main-menu-mobile d-xl-none">

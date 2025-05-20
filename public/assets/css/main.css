@@ -588,7 +588,7 @@ input[type=color] {
 }
 
 .tp-header-logo img {
-  width: 125px;
+  width: 200px;
 }
 
 .demo {
@@ -6749,7 +6749,7 @@ body .ui-tooltip {
   border-radius: 8px;
 }
 .tp-header-logo-1 img {
-  width: 125px;
+  width: 200px;
   height: 48px;
 }
 .tp-header-logo-1 .logo-2 {
@@ -7397,7 +7397,7 @@ body .ui-tooltip {
 }
 .tp-header-4-logo .logo-2 {
   height: 48px;
-  width: 125px;
+  width: 200px;
   display: none;
 }
 .tp-header-4-link a {
