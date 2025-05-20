@@ -3,7 +3,9 @@ import React, { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/img/logo/logo.svg";
+import logoMobile from "@/assets/img/logo/logoonlywhite.png";
 import logo_black from "@/assets/img/logo/logo-black.svg";
+import logo_blackMobile from "@/assets/img/logo/logoonlyblack.png";
 import HeaderStickyWrapper from "./header-sticky-provider/header-sticky-wrapper";
 import OffcanvasButton from "./button/offcanvas-btn";
 import NavbarMenusTwo from "./navbar/navbar-menus-2";
@@ -36,13 +38,14 @@ export default function HeaderOne() {
               <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-logo-1 tp-header-logo">
                   <Link href="/">
-                    <Image className="logo-1" src={logo} alt="logo" priority />
+                    <Image className="logo-1 desktop" src={logo} alt="logo" priority />
                     <Image
-                      className="logo-2"
+                      className="logo-2 desktop"
                       src={logo_black}
                       alt="logo"
                       priority
                     />
+                  
                   </Link>
                 </div>
               </div>

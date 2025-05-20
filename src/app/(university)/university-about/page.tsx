@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 import AboutTwo from "@/components/about/about-two";
-import CounterFour from "@/components/counter/counter-four";
 import MissionArea from "@/components/mission/mission-area";
 import Dean from "./Dean";
 import BoardMembers from "./BoardMembers";
@@ -25,7 +24,7 @@ export default function UniversityAboutPage() {
       {/* about area end */}
 
       {/* counter area start */}
-      <CounterFour/>
+      {/* <CounterFour/> */}
       {/* counter area end */}
 
       {/* mission area start */}

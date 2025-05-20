@@ -25,7 +25,7 @@ const missionData = [
 type IProps = {
   top_cls?: string;
 }
-export default function MissionArea({top_cls='grey-bg pt-30 pb-50'}: IProps) {
+export default function MissionArea({ top_cls = 'grey-bg pt-30 pb-50' }: IProps) {
   return (
     <section className={`tp-our-mission-area ${top_cls}`}>
       <div className="container">
@@ -35,7 +35,7 @@ export default function MissionArea({top_cls='grey-bg pt-30 pb-50'}: IProps) {
               className="tp-our-mission-thumb wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <Image src={mission_main_img} alt="mission-img" style={{height:'auto'}} />
+              <Image src={mission_main_img} alt="mission-img" style={{ height: 'auto' }} />
             </div>
           </div>
           <div className="col-lg-8">
@@ -56,9 +56,8 @@ export default function MissionArea({top_cls='grey-bg pt-30 pb-50'}: IProps) {
               {missionData.map((item, i) => (
                 <div
                   key={item.id}
-                  className={`tp-our-mission-item d-flex align-items-center justify-content-center justify-content-md-between ${
-                    i !== missionData.length - 1 ? "mb-20" : ""
-                  }`}
+                  className={`tp-our-mission-item d-flex align-items-center justify-content-center justify-content-md-between ${i !== missionData.length - 1 ? "mb-20" : ""
+                    }`}
                 >
                   <div className="tp-our-mission-item-content">
                     <h4 className="tp-our-mission-item-title">{item.title}</h4>

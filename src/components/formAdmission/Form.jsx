@@ -300,7 +300,7 @@ const Form = () => {
               name="phone"
               variant="outlined"
               className="custom-input"
-              style={{ width: `calc(100% - 120px)` }}
+              style={{ width: `${otpVerified?'100%':'calc(100% - 120px)'}` }}
               value={formData.phone}
               onChange={handleChange}
               error={!!errors.phone}
@@ -322,7 +322,8 @@ const Form = () => {
 
 
 
-          <div className='input-with-btn'>
+          {!otpVerified?(
+            <div className='input-with-btn'>
 
             <TextField
              id="otp"
@@ -340,6 +341,7 @@ const Form = () => {
             <button onClick={verifyOtp}>Verify</button>
 
           </div>
+          ):<div className='success-msg'>OTP Verified Sucessfully</div>}
 
           {/* <div className={`form-group ${errors.phone && 'error'}`}>
 

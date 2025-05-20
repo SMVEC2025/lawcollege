@@ -77,22 +77,12 @@ export default function FooterOne({ style_2 = false }: IProps) {
             </div>
             <div className="col-xl-4 col-lg-4 col-sm-8">
               <div className={`p-footer-widget ${style_2 ? 'tp-footer-5-col-4' : 'tp-footer-col-4'} mb-30`}>
-                <h4 className="tp-footer-widget-title mb-20">Our Newsletter</h4>
+                <h4 className="tp-footer-widget-title mb-20">Follow s</h4>
                 <div className="tp-footer-newsletter-wrap">
                   <p>
-                    Enter your email and we will send you <br /> more
-                    information
+                    Follow us on social media for the latest updates and news.
                   </p>
-                  <form action="#">
-                    <div className="tp-footer-newsletter-wrapper mb-30">
-                      <div className={`tp-footer-newsletter-input ${style_2 ? 'tp-footer-5-newsletter-input' : ''}`}>
-                        <input type="email" placeholder="Your email" />
-                      </div>
-                      <div className={`${style_2 ? 'tp-footer-5-newsletter-submit' : 'tp-footer-newsletter-submit'}`}>
-                        <button className={`${style_2 ? 'tp-btn-4' : 'tp-btn'}`}>Subscribe</button>
-                      </div>
-                    </div>
-                  </form>
+                  
                   {/* footer social */}
                   <div className="tp-footer-newsletter-social">
                     <FooterSocial />

@@ -20369,7 +20369,6 @@ a .course-sky {
 }
 .tp-brand-5-item img {
   mix-blend-mode: luminosity;
-  filter: grayscale(1);
 }
 
 .tp-gallary-3-wrap {
@@ -22012,7 +22011,6 @@ span.dark-border {
   position: sticky;
   top: 120px;
   margin-bottom: 20px;
-  filter: grayscale(1);
   margin-bottom: 200px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {

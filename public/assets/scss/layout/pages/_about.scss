@@ -569,6 +569,9 @@
         left: 0;
         top: 0;
         height: 100%;
+         @media #{$sm,$xs} {
+        display: none;
+        }
     }
     .rightpiller{
          position: absolute;
@@ -576,6 +579,9 @@
         top: 0;
          transform: scaleX(-1);
         height: 100%;
+          @media #{$sm,$xs} {
+        display: none;
+        }
 
     }
 }
