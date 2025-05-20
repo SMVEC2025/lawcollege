@@ -4,6 +4,7 @@ import axios from 'axios';
 import React, { useState, useEffect, useRef } from 'react';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
+import { FormControl, InputLabel, Select, FormHelperText, Box, TextField, MenuItem } from '@mui/material';
 
 // Indian states and cities data
 const indianStates = [
@@ -161,7 +162,7 @@ const Form = () => {
 
       };
       try {
-       await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
+        await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
 
         setTimeout(() => {
           setIsSubmitted(true)
@@ -260,44 +261,88 @@ const Form = () => {
   }
   return (
     <div className="form-container">
-      <h1>Admission enquiry</h1>
+      <div className='header'>
+        <h2>Admission enquiry</h2>
+      </div>
       <form >
-        <div className={`form-group ${errors.name && 'error'}`}>
-          <label htmlFor="name">Full Name:
-          </label>
-          <input
-            type="text"
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+
+          <TextField
             id="name"
+            label="Name"
             name="name"
+            variant="outlined"
+            className="custom-input"
+            fullWidth
             value={formData.name}
             onChange={handleChange}
-            className={errors.name ? 'error' : ''}
+            error={!!errors.name}
+            helperText={errors.name}
           />
-        </div>
-        <div className={`form-group ${errors.fathername && 'error'}`}>
-          <label htmlFor="fathername">Father Name:</label>
-          <input
-            type="text"
+
+          <TextField
             id="fathername"
+            label="Father Name"
+            className="custom-input"
             name="fathername"
+            variant="outlined"
+            fullWidth
             value={formData.fathername}
             onChange={handleChange}
-            className={errors.fathername ? 'error' : ''}
+            error={!!errors.fathername}
+            helperText={errors.fathername}
           />
-        </div>
+          <div className='input-with-btn'>
 
-        <div className={`form-group ${errors.phone && 'error'}`}>
-          <label htmlFor="phone">Phone Number:</label> <div className='error-message'>{errors.phone}</div>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className={errors.phone ? 'error' : ''}
-            maxLength={10}
+            <TextField
+              id="phone"
+              label="Phone"
+              name="phone"
+              variant="outlined"
+              className="custom-input"
+              style={{ width: `calc(100% - 120px)` }}
+              value={formData.phone}
+              onChange={handleChange}
+              error={!!errors.phone}
+              helperText={errors.phone}
+            />
+            {buttonLoading == '' && !otpVerified && (
+              <button onClick={sendOtp}>Get-Otp</button>
+            )}
+            {buttonLoading == 'otp' && (
+              <button><span className='loading-btn'><AiOutlineLoading3Quarters /></span></button>
+            )}
+            {buttonLoading == 'otpcount' && !otpVerified && (
+              <button>{timeLeft} sec</button>
+            )}
+          </div>
 
-          />
+
+
+
+
+
+          <div className='input-with-btn'>
+
+            <TextField
+             id="otp"
+              name="otp"
+              value={formData.otp}
+              onChange={handleChange}
+              label="OTP"
+              variant="outlined"
+              className="custom-input"
+              style={{ width: `calc(100% - 120px)` }}
+              error={!!errors.otp}
+              helperText={errors.otp}
+            />
+
+            <button onClick={verifyOtp}>Verify</button>
+
+          </div>
+
+          {/* <div className={`form-group ${errors.phone && 'error'}`}>
+
           <div className='sendotp-btn'>
             {buttonLoading == '' && !otpVerified && (
               <button onClick={sendOtp}>Get-Otp</button>
@@ -309,9 +354,9 @@ const Form = () => {
               <div >{timeLeft} sec</div>
             )}
           </div>
-        </div>
+        </div> */}
 
-        {otpVerified ? (
+          {/* {otpVerified ? (
           <div className='otp-success'>Verified successfully</div>
 
         ) : (
@@ -332,83 +377,89 @@ const Form = () => {
               <button onClick={verifyOtp}>Verify</button>
             </div>
           </div>
-        )}
+        )} */}
 
-        <div className={`form-group ${errors.email && 'error'}`}>
-          <label htmlFor="email">email:</label>
-          <input
-            type="email"
+          <TextField
             id="email"
+            label="Email"
             name="email"
+            type="email"
+            className="custom-input"
+            variant="outlined"
+            fullWidth
             value={formData.email}
             onChange={handleChange}
-            className={errors.email ? 'error' : ''}
+            error={!!errors.email}
+            helperText={errors.email}
           />
-        </div>
+          <FormControl fullWidth sx={{ mt: 2 }} error={Boolean(errors.course)}>
+            <InputLabel id="course-label">Program</InputLabel>
+            <Select
+              labelId="course-label"
+              id="course"
+              name="course"
+              className="custom-input"
+              value={formData.course}
+              onChange={handleChange}
+              label="Program"
+            >
+              <MenuItem value="">
+                <em>Select Program</em>
+              </MenuItem>
 
-        <div className={`form-group ${errors.course && 'error'}`}>
-          <label htmlFor="course">Program:</label>
-          <select
-            id="course"
-            name="course"
-            value={formData.course}
-            onChange={handleChange}
-            className={errors.course ? 'error' : ''}
-          >
-            <option value="">Select Program</option>
-            {/* Pondicherry first */}
-            {/* Other states */}
-            {courses
-              .map(course => (
-                <option key={course} value={course}>
+              {/* Pondicherry first */}
+              {/* Other states */}
+              {courses.map(course => (
+                <MenuItem key={course} value={course}>
                   {course}
-                </option>
+                </MenuItem>
               ))}
-          </select>
-        </div>
+            </Select>
 
-        <div className={`form-group ${errors.state && 'error'}`}>
-          <label htmlFor="state">State:</label>
-          <select
+            {errors.course && <FormHelperText>{errors.course}</FormHelperText>}
+          </FormControl>
+
+          <TextField
+            select
             id="state"
+            label="State"
             name="state"
+            fullWidth
+            className="custom-input"
+            variant="outlined"
             value={formData.state}
             onChange={handleChange}
-            className={errors.state ? 'error' : ''}
+            error={!!errors.state}
+            helperText={errors.state}
           >
-            <option value="">Select State</option>
-            {/* Pondicherry first */}
-            {/* Other states */}
-            {indianStates
-              .filter(state => state.name !== 'Pondicherry')
-              .map(state => (
-                <option key={state.name} value={state.name}>
-                  {state.name}
-                </option>
-              ))}
-          </select>
-        </div>
-
-        <div className={`form-group ${errors.city && 'error'}`}>
-          <label htmlFor="city">City:</label>
-          <select
+            {indianStates.map((state) => (
+              <MenuItem key={state.name} value={state.name}>
+                {state.name}
+              </MenuItem>
+            ))}
+          </TextField>
+          <TextField
+            select
             id="city"
+            label="City"
             name="city"
+            fullWidth
+            variant="outlined"
+            className="custom-input"
             value={formData.city}
             onChange={handleChange}
-            className={errors.city ? 'error' : ''}
-            disabled={!formData.state}
+            error={!!errors.city}
+            helperText={errors.city}
           >
-            <option value="">Select City</option>
-            {cities.map(city => (
-              <option key={city} value={city}>
+            {cities.map((city) => (
+              <MenuItem key={city} value={city}>
                 {city}
-              </option>
+              </MenuItem>
             ))}
-          </select>
-        </div>
+          </TextField>
 
-        {/* <div className={`form-group ${errors.course && 'error'}`}>
+
+          {/* <div className={`form-group ${errors.course && 'error'}`}>
           <label>Course Applying For:</label>
           <div className="radio-group">
             {courses.map(course => (
@@ -426,29 +477,31 @@ const Form = () => {
             ))}
           </div>
         </div> */}
-        <div className={`form-group ${errors.message && 'error'}`}>
-          <label htmlFor="message">Message:</label>
-          <textarea
+          <TextField
             id="message"
+            label="Message"
             name="message"
+            multiline
+            rows={4}
+            fullWidth
+            variant="outlined"
             value={formData.message}
             onChange={handleChange}
-            className={errors.message ? 'error' : ''}
-            rows="4"
-          ></textarea>
-        </div>
+          />
 
 
-        {!loading ? (
-          <button onClick={handleSubmit} className="submit-btn">
-            Submit Application
-          </button>
-        ) : (
-          <button className="submit-btn">
-            <div><span className='loading-btn'><AiOutlineLoading3Quarters /></span></div>
+          {!loading ? (
+            <button onClick={handleSubmit} className="submit-btn">
+              Submit Application
+            </button>
+          ) : (
+            <button className="submit-btn">
+              <div><span className='loading-btn'><AiOutlineLoading3Quarters /></span></div>
 
-          </button>
-        )}
+            </button>
+          )}
+        </Box>
+
       </form>
     </div>
   );

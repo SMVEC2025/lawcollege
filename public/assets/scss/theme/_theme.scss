@@ -241,39 +241,6 @@ button:focus{
 	text-transform: capitalize;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-input[type="password"],
-input[type="url"],
-textarea{
-	outline: none;
-	background-color: #fff;
-	height: 54px;
-	width: 100%;
-	line-height: 56px;
-	font-size: 14px;
-	color: var(--tp-common-black);
-	padding-left: 24px;
-	padding-right: 24px;
-	border: 1px solid #E4E2DC;
-	@include tp-placeholder{
-		color: #95999D;
-	}
-	@include rtl{
-		text-align: right;
-	}
-
-	&:focus{
-		border-color: var(--tp-theme-primary);
-		&::placeholder{
-			opacity: 0;
-		}
-	}
-
-}
-
 textarea{
 	line-height: 1.4;
 	padding-top: 17px;
