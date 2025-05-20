@@ -41,7 +41,6 @@ export default function TestimonialOne() {
                 </span>
                 </VideoOne>
                 {/* Video area */}
-                <p>Video Tour in logo</p>
               </div>
             </div>
           </div>
@@ -51,7 +50,6 @@ export default function TestimonialOne() {
               data-wow-delay=".3s"
             >
               <div className="tp-section mb-40">
-                <h5 className="tp-section-subtitle">Testimonial</h5>
                 <h3 className="tp-section-title">What Students Says</h3>
               </div>
               <div className="tp-testimonial-shape">

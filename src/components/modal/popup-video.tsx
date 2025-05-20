@@ -14,7 +14,7 @@ type IPropType = {
 const VideoPopup = ({
   isVideoOpen,
   onHide,
-  videoId = "TYYf8zYjP5k",
+  videoId = "OeeMxu2bpXc",
   vimeoPlayer,
 }: IPropType) => {
   console.log(videoId, vimeoPlayer);

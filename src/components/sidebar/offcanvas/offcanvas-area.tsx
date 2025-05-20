@@ -39,27 +39,13 @@ export default function OffcanvasArea({openOffCanvas,onHandleOffCanvas,offcanvas
                   </div>
                   <div className="offcanvas-main">
                      <div className="offcanvas-content">
-                        <h3 className="offcanvas-title">Hello There!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, </p>
+                        <h3 className="offcanvas-title">Menu</h3>
                      </div>
                      
                      {/* mobile menu */}
-                     {offcanvas_menu_2 ? <OffcanvasMenuTwo /> : <OffcanvasMenu />}
                      {/* mobile menu */}
-
-                     <div className="offcanvas-gallery">
-                        <div className="row gx-2">
-                           {galleryData.map((item, index) => (
-                              <div className="col-md-3 col-3" key={index}>
-                                 <div className="offcanvas-gallery-img fix">
-                                    <a href={item.link} target="_blank">
-                                       <Image src={item.src} alt={`gallery-${index}`} width={87} height={87} />
-                                    </a>
-                                 </div>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
+<OffcanvasMenuTwo />
+                    
                      <div className="offcanvas-contact">
                         <h3 className="offcanvas-title sm">Information</h3>
                         <ul>

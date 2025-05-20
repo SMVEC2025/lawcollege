@@ -12,7 +12,7 @@ export default function EventDetailsVideo() {
         style={{ height: "auto" }}
       />
       <div className="tp-event-details-teaser-video-popup">
-        <VideoProvider videoId="go7QYaQR494">
+        <VideoProvider videoId="OeeMxu2bpXc">
           <Image
             src={youtube_img}
             alt="youtube-img"

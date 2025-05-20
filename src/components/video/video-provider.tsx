@@ -25,7 +25,7 @@ export default function VideoProvider({cls='',children,videoId,vimeoPlayer }: IP
         <VideoPopup
             isVideoOpen={isVideoOpen}
             onHide={() => setIsVideoOpen(false)}
-            videoId={`${videoId?videoId:'LlCwHnp3kL4'}`}
+            videoId={`${videoId?videoId:'OeeMxu2bpXc'}`}
             vimeoPlayer={vimeoPlayer}
           />
       </ModalProvider>
