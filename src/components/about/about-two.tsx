@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { VideoPlayerSvg } from "../svg";
-import VideoProvider from "../video/video-provider";
 import mainimg from  "@/assets/img/images/studentscort.png"
 
 
